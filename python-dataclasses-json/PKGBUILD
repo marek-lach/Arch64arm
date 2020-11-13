@@ -6,7 +6,9 @@ _module='dataclasses-json'
 pkgver='0.5.2'
 pkgrel=2
 pkgdesc='Easily serialize Python Data Classes to and from JSON'
+arch=('armv6h' 'armv7h' 'aarch64')
 url='https://github.com/lidatong/dataclasses-json'
+license=('MIT')
 depends=(
     'python'
     'python-marshmallow'
@@ -18,8 +20,6 @@ optdepends=()
 makedepends=(
     'python-setuptools'
 )
-license=('MIT')
-arch=('armv6h' 'armv7h' 'aarch64')
 source=(
     'https://files.pythonhosted.org/packages/source/d/dataclasses-json/dataclasses-json-0.5.2.tar.gz'
 )
