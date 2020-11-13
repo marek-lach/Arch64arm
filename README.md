@@ -1,2 +1,2 @@
 # Install with:
-_makepkg -si_.
+_makepkg -si_
