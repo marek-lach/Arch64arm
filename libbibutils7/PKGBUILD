@@ -1,6 +1,6 @@
 # Maintainer: codebreaker
 
-pkgname=libbibutils7
+pkgname=bibutils
 pkgver=6.10
 pkgrel=1
 pkgdesc="Bibliography file converter, shared library. COPAC, EndNote refer, EndNote XML, Pubmed XML, ISI web of science, US Library of Congress MODS, RIS, and Word 2007 bibliography. This package contains the shared library doing most of the work"
@@ -8,7 +8,7 @@ arch=('aarch64')
 url="https://sourceforge.net/projects/bibutils"
 license=('GPL')
 groups=('')
-depends=('glibc>=2.17')
+depends=('glibc>=2.17' 'dietlibc' 'docbook-xml' 'docbook-xsl')
 options=('!strip' '!emptydirs')
 source=("http://ftp.de.debian.org/debian/pool/main/b/bibutils/libbibutils7_6.10-2_arm64.deb")
 sha256sums=('ae661837ce2aab76450ed2c5391b79e72e09fedc20a1917f0927d96e8d832354')
