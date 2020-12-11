@@ -5,6 +5,7 @@ _These dependencies help with building the following software:_
 
 # - apostrophe
     python-pypandoc
+    pandoc-citeproc
     libghc-pandoc-citeproc-data
 # - gfeeds-git
 # - cozy-audiobooks
