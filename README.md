@@ -5,6 +5,7 @@ _These dependencies help with building the following software:_
 
 # - apostrophe
     python-pypandoc
+    pandoc
     pandoc-data
     pandoc-citeproc
     libghc-pandoc-citeproc-data
