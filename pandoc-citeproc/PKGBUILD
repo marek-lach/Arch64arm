@@ -1,0 +1,25 @@
+# Maintainer: codebreaker
+
+pkgname=pandoc-citeproc
+pkgver=0.17.0.1
+pkgrel=1
+pkgdesc="Pandoc support for Citation Style Language - tools. Pandoc-citeproc is a Haskell implementation of the Citation Style Language (CSL). Pandoc filter (pandoc >= 1.12), and also has a mode for converting bibliographic databases a YAML format suitable for inclusion in pandoc YAML metadata."
+arch=('aarch64')
+url="https://github.com/jgm/pandoc-citeproc"
+license=('GPL')
+groups=('')
+depends=('bibutils7>=6.10' 'glibc>=2.29' 'gmp' 'icu>=67.1' 'libffi>=3.3' 'libghc-pandoc-citeproc-data>=0.17.0.1' 'libyaml' 'pcre' 'zlib>=1.1.4')
+options=('!strip' '!emptydirs')
+source=("http://ftp.br.debian.org/debian/pool/main/h/haskell-pandoc-citeproc/pandoc-citeproc_0.17.0.1-1+b1_arm64.deb")
+sha256sums=('747fe21773fbe06796915e69e8a39e1a9e38568d4a11efc504d4c9302733e73f')
+
+package(){
+
+	# Extract package data
+	tar xf data.tar.xz -C "${pkgdir}"
+	
+	mkdir -p "${pkgdir}/usr/share/licenses/${pkgname}"
+	install -D -m644 "${pkgdir}/usr/share/doc/${pkgname}/copyright" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+
+
+}
