@@ -9,6 +9,7 @@ _These dependencies help with building the following software:_
     pandoc-citeproc
     libghc-pandoc-citeproc-data
     libbibutils7
+    libpcre3
 # - gfeeds-git
 # - cozy-audiobooks
 # - sublime-music
