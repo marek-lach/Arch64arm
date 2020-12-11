@@ -11,7 +11,7 @@ license=('GPL')
 groups=('')
 depends=('glibc>=2.29' 'gmp' 'icu>=67.1' 'libffi>=3.3' 'pandoc-data>=2.9.2.1' 'libyaml' 'pcre' 'zlib>=1.1.4' 'groff')
 options=('!strip' '!emptydirs')
-source=("http://ftp.de.debian.org/debian/pool/main/p/pandoc/pandoc_2.9.2.1-1_arm64.deb")
+source=("http://ftp.de.debian.org/debian/pool/main/p/pandoc/pandoc_2.9.2.1-1+b1_arm64.deb")
 sha256sums=('828ca668779c62df490e8973b31d58674d18064f7deac80b00d742214e9e1b87')
 
 package(){
