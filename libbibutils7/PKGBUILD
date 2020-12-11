@@ -1,6 +1,6 @@
 # Maintainer: codebreaker
 
-pkgname=bibutils7
+pkgname=libbibutils7
 pkgver=6.10
 pkgrel=1
 pkgdesc="Bibliography file converter, shared library. COPAC, EndNote refer, EndNote XML, Pubmed XML, ISI web of science, US Library of Congress MODS, RIS, and Word 2007 bibliography. This package contains the shared library doing most of the work"
