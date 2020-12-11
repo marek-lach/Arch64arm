@@ -4,8 +4,8 @@ _makepkg -si_
 _These dependencies help with building the following software:_
 
 # - apostrophe
-    python-pypandoc
-    pandoc
+    python-pypandoc (requires: pandoc)
+    pandoc (requires:
     pandoc-data
     pandoc-citeproc
     libghc-pandoc-citeproc-data
