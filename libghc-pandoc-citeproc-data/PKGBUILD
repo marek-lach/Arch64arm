@@ -1,0 +1,23 @@
+# Maintainer: codebreaker
+
+pkgname=libghc-pandoc-citeproc-data
+pkgver=0.17.0.1
+pkgrel=1
+pkgdesc="Pandoc support for Citation Style Language - data files. Pandoc-citeproc is a Haskell implementation of the Citation Style Language (CSL). Pandoc-citeproc adds to pandoc, the famous Haskell text processing tool, a Bibtex like citation and bibliographic formatting and generation facility. CSL is an XML language for specifying citation and bibliographic style files in commercial products like Endnote or Reference Manager. This package contains the data files needed to use the library."
+arch=('any')
+url="https://github.com/jgm/pandoc-citeproc"
+license=('GPL')
+groups=('')
+options=('!strip' '!emptydirs')
+source=("http://ftp.br.debian.org/debian/pool/main/h/haskell-pandoc-citeproc/libghc-pandoc-citeproc-data_0.17.0.1-1_all.deb")
+sha256sums=('78b366b2265ffdec4814bb70c9a85de0b654d54e7f2112d64a810abc4a575fde')
+
+package(){
+
+	# Extract package data
+	tar xf data.tar.xz -C "${pkgdir}"
+
+	mkdir -p "${pkgdir}/usr/share/licenses/${pkgname}"
+	install -D -m644 "${pkgdir}/usr/share/doc/${pkgname}/copyright" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+
+}
