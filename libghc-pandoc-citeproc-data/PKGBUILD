@@ -9,7 +9,7 @@ url="https://github.com/jgm/pandoc-citeproc"
 license=('GPL')
 groups=('')
 options=('!strip' '!emptydirs')
-source=("http://ftp.br.debian.org/debian/pool/main/h/haskell-pandoc-citeproc/libghc-pandoc-citeproc-data_0.17.0.1-1_all.deb")
+source=("http://ftp.de.debian.org/debian/pool/main/h/haskell-pandoc-citeproc/libghc-pandoc-citeproc-data_0.17.0.1-1_all.deb")
 sha256sums=('78b366b2265ffdec4814bb70c9a85de0b654d54e7f2112d64a810abc4a575fde')
 
 package(){
